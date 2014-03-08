@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans';
+    min-width: 320px;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h1,
+.first-name, .last-name, .status {
+    font-family: 'Bebas Neue';
+}
+
+header {
+    background: url(../images/breeze.png);
+    padding: 100px 0;
+}
+
+header > div,
+#infos > div {
+    margin: auto;
+    max-width: 800px;
+}
+
+.welcome {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 24pt;
+    color: white;
+}
+
+.qr {
+    display: inline;
+}
+
+.first-name, .last-name {
+    font-size: 5rem;
+}
+
+.status {
+    font-size: 2rem;
+}
