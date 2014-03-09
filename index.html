@@ -3,11 +3,18 @@
     <head>
         <title>Alexis Gauthiez</title>
         <meta charset="utf-8">
+
+        <!-- STYLES -->
         <link rel="stylesheet" href="css/semantic.min.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
+        
+        <script src="data/skills.json"></script>
+        
+        <!-- SCRIPTS -->
         <script src="javascript/jquery-2.1.0.min.js"></script>
         <script src="javascript/semantic.min.js"></script>
+        <script src="javascript/chart.min.js"></script>
         <script src="javascript/script.js"></script>
     </head>
     <body>
@@ -29,9 +36,10 @@
                 </div>
             </div>
         </header>
+
         <section id="infos">
             <div>
-                <div class="ui middle aligned three column grid">
+                <div class="ui middle aligned three stackable column grid">
                     <div class="right aligned column">
                         <h2 class="ui header">
                             <div class="content">
@@ -44,32 +52,168 @@
                         Currently looking for an internship as an assistant engineer for the period from June to August 2014
                     </div>
                     <div class="center aligned column">
-                        <img src="images/qr.svg" title="Scan me to get my business card on your phone" height="200px" class="qr" data-html="<h2 class='ui header'><i class='big qr code icon'></i><div class='content'>Scan me<div class='sub header'>... and get my business card on your phone</div></div></h2>" data-position="top center">
+                        <img src="images/qr.svg" title="Scan me to get my business card on your phone" height="250px" class="popup" data-html="<h2 class='ui header'><i class='big qr code icon'></i><div class='content'>Scan me<div class='sub header'>... and get my business card on your phone</div></div></h2>" data-position="top center">
                     </div>
                     <address class="column">
-                    <div class="contact ui relaxed animated divided list">
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                5, rue Vigier<br>91600 Savigny-sur-Orge<br>France
+                        <div class="contact ui relaxed animated divided list">
+                            <div class="item">
+                                <i class="map marker icon"></i>
+                                <div class="content">
+                                    5, rue Vigier<br>91600 Savigny-sur-Orge<br>France
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="phone sign icon"></i>
+                                <div class="content">
+                                    +33 6 89 26 50 35
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="mail icon"></i>
+                                <div class="content">
+                                    alexis.gauthiez@u-psud.fr
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <i class="phone sign icon"></i>
-                            <div class="content">
-                                +33 6 89 26 50 35
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="mail icon"></i>
-                            <div class="content">
-                                alexis.gauthiez@u-psud.fr
-                            </div>
-                        </div>
-                    </div>
                     </address>
                 </div>
             </div>
         </section>
+        
+        <section id="education">
+            <div>
+                <h1 class="ui center aligned icon header">
+                    <i class="circular pencil icon"></i>
+                    Education
+                </h1>
+                <div class="ui justified segment">
+                    <h2 class="ui header">
+                        Student at Polytech Paris-Sud
+                        <div class="sub header"><i class="calendar icon"></i>since 2012</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui teal ribbon label">University of Paris-Sud / France</div>
+                    <p>Second year of the engineering cycle, IT specialism</p>
+                    <div class="ui divider"></div>
+                    <div class="ui label">software engineering</div>
+                    <div class="ui label">databases</div>
+                    <div class="ui label">computer networks</div>
+                    <div class="ui label">human–computer interaction</div>
+                    <div class="ui label">operational research</div>
+                    <div class="ui label">corporate sciences</div>
+                </div>
+                <div class="ui justified segment">
+                    <h2 class="ui header">
+                        Preparatory cycle
+                        <div class="sub header"><i class="calendar icon"></i>2010 - 2012</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui teal ribbon label">University of Paris-Sud / France</div>
+                    <p>« Parcours des écoles d’ingénieurs Polytech » (PeiP)</p>
+                </div>
+                <div class="ui justified segment">
+                    <h2 class="ui header">
+                        Science A Level
+                        <div class="sub header"><i class="calendar icon"></i>2010</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui teal ribbon label">Lyc&eacute;e Saint-Charles, Athis-Mons / France</div>
+                    <p>With honors</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div>
+                <h1 class="ui center aligned icon header">
+                    <i class="briefcase circular icon"></i>
+                    Experience
+                </h1>
+                <div class="ui inverted teal justified segment">
+                    <h2 class="ui inverted header">
+                        EUROP-CAMERA
+                        <div class="sub header"><i class="calendar icon"></i>July 2013</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui black ribbon label">Savigny-sur-Orge / France</div>
+                    <br>
+                    <div class="ui label">Internship</div>
+                    <p>Several logistical and maintenance tasks : customer support on the phone and at the counter, desktops and laptops maintenance and repairs, preparation of stocks and orders of CCTV kits</p>
+                </div>
+                <div class="ui inverted teal justified segment">
+                    <h2 class="ui inverted header">
+                        SPIECAPAG IT DEPARTMENT
+                        <div class="sub header"><i class="calendar icon"></i>June - July 2012</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui black ribbon label">Colombes / France</div>
+                    <br>
+                    <div class="ui label">Internship</div>
+                    <p>Several development and maintenance tasks : developing a software to import data from Microsoft Excel sheets to a Microsoft Access database using Visual Basic, maintaining a data access web interface using ASP, creating a website to buy advertising items using HTML, CSS, Javascript and ASP.NET</p>
+                </div>
+                <div class="ui inverted teal justified segment">
+                    <h2 class="ui inverted header">
+                        COFELY INEO IT DEPARTMENT
+                        <div class="sub header"><i class="calendar icon"></i>April 2007</div>
+                    </h2>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui black ribbon label">Malakoff / France</div>
+                    <br>
+                    <div class="ui label">Internship</div>
+                    <p>One week as a trainee, discovering corporate environment</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="software">
+            <div>
+                <h1 class="ui center aligned icon header">
+                    <i class="laptop circular icon"></i>
+                    Software skills
+                </h1>
+                <div class="ui piled segment">
+                    <div class="ui teal inverted active progress">
+                        <div class="bar" style="width: 95%;">Microsoft Office</div>
+                    </div>
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 75%;">Adobe Photoshop</div>
+                    </div>
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 60%;">Eclipse</div>
+                    </div>                    
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 45%;">Git</div>
+                    </div>                    
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 40%;">Ableton Live</div>
+                    </div>                    
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 30%;">Adobe InDesign</div>
+                    </div>
+                    <div class="ui teal active progress">
+                        <div class="bar" style="width: 15%;">Adobe Premiere</div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <section id="development">
+            <div>
+                <h1 class="ui center aligned icon header">
+                    <i class="keyboard circular icon"></i>
+                    Development skills
+                </h1>
+                <canvas id="skill" width="320" height="400"></canvas>
+            </div>
+        </section>
+        
+        <section id="languages">
+        </section>
+        
+        <section id="other">
+        </section>
+        
+        <footer>
+        </footer>
     </body>
 </html>

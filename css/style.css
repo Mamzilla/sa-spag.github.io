@@ -3,23 +3,49 @@ body {
     min-width: 320px;
     padding: 0;
     margin: 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.75);
+    background: url(../images/breeze-loop.jpg);
 }
 
-h1,
+.ui.header {
+    font-family: 'Source Sans Pro';
+}
+
+.ui.label {
+    margin-top: 6px;
+}
+
+h1, h1.ui.header,
 .first-name, .last-name, .status {
     font-family: 'Bebas Neue';
 }
 
-header {
-    background: url(../images/breeze.png);
-    padding: 100px 0;
+h1, h1.ui.header {
+    font-size: 3rem;
 }
 
-header > div,
-#infos > div {
+header > div, section > div {
     margin: auto;
     max-width: 800px;
+    padding: 50px 10px;
+}
+
+#infos, #experience, #development {
+    background-color: white;
+}
+
+.bar {
+    padding-left: 5px;
+    color: white;
+}
+
+.progress {
+    margin-bottom: 5px;
+}
+
+/* HEADER */
+header {
+    padding: 50px 0;
 }
 
 .welcome {
@@ -29,14 +55,11 @@ header > div,
     color: white;
 }
 
-.qr {
-    display: inline;
-}
-
 .first-name, .last-name {
     font-size: 5rem;
 }
 
 .status {
     font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
 }
