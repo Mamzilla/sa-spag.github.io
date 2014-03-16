@@ -1,65 +1,55 @@
+/* MAIN STYLE SHEET
+ * By Alexis Gauthiez
+ * Version 0.1
+ *
+ * Colors:  Name    HEX     RGB
+ *          Red     #FF4319 rgb(255, 67, 25)
+ *          Yellow  #FFF89C rgb(255, 248, 156)
+ */
+
+/* COMMON */
 body {
     font-family: 'Open Sans';
-    min-width: 320px;
-    padding: 0;
-    margin: 0;
+    font-weight: lighter;
     color: rgba(0, 0, 0, 0.75);
-    background: url(../images/breeze-loop.jpg);
+        background-image: url(../img/header1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
-.ui.header {
+h1 {
     font-family: 'Source Sans Pro';
+    text-align: center;
+    font-size: 50px;
 }
 
-.ui.label {
-    margin-top: 6px;
+p { text-align: justify }
+section:nth-child(odd) h1 { color: white; }
+section:nth-child(even) { background-color: white; }
+section:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-top: 10px solid #FF4319;
 }
-
-h1, h1.ui.header,
-.first-name, .last-name, .status {
-    font-family: 'Bebas Neue';
-}
-
-h1, h1.ui.header {
-    font-size: 3rem;
-}
-
-header > div, section > div {
-    margin: auto;
-    max-width: 800px;
-    padding: 50px 10px;
-}
-
-#infos, #experience, #development {
-    background-color: white;
-}
-
-.bar {
-    padding-left: 5px;
-    color: white;
-}
-
-.progress {
-    margin-bottom: 5px;
+section:nth-child(even) h1 { color: #FF4319; }
+div.overlay { background-color: rgba(255, 67, 25, 0.75); }
+div.white-overlay { background-color: rgba(255, 255, 255, 0.9); }
+section {
+    padding: 50px 0;
 }
 
 /* HEADER */
 header {
-    padding: 50px 0;
-}
-
-.welcome {
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 24pt;
+    font-size: 18px;
     color: white;
 }
 
-.first-name, .last-name {
-    font-size: 5rem;
+header div {
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
-.status {
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.5);
+header h1 {
+    font-size: 100px;
 }
