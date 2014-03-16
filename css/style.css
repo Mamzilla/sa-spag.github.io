@@ -12,7 +12,7 @@ body {
     font-family: 'Open Sans';
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.75);
-        background-image: url(../img/header1.gif);
+    background-image: url(../img/header1.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -29,15 +29,13 @@ p { text-align: justify }
 section:nth-child(odd) h1 { color: white; }
 section:nth-child(even) { background-color: white; }
 section:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.85); 
     border-top: 10px solid #FF4319;
 }
 section:nth-child(even) h1 { color: #FF4319; }
 div.overlay { background-color: rgba(255, 67, 25, 0.75); }
 div.white-overlay { background-color: rgba(255, 255, 255, 0.9); }
-section {
-    padding: 50px 0;
-}
+section { padding: 50px 0; }
 
 /* HEADER */
 header {
@@ -52,4 +50,15 @@ header div {
 
 header h1 {
     font-size: 100px;
+}
+
+footer {
+    background-color: #FF4319;
+    box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    color: white;
+}
+
+address {
+    font-size: 18px;
 }
