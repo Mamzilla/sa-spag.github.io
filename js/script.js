@@ -1,3 +1,3 @@
 window.onload = function() {
-    $('.tooltiped').tooltip();
+    $(document).foundation();
 }

@@ -5,7 +5,7 @@
 <defs>
 <rect id="p" width="9" height="9" />
 </defs>
-<g fill="rgba(0, 0, 0, 0.5)">
+<g fill="#222">
 <use x="36" y="36" xlink:href="#p" />
 <use x="36" y="45" xlink:href="#p" />
 <use x="36" y="54" xlink:href="#p" />
