@@ -1,20 +1,36 @@
-/* MAIN STYLE SHEET
- * By Alexis Gauthiez
- * Version 0.1
+/**
+ *  MAIN STYLE SHEET
+ *  By Alexis Gauthiez
+ *  Version 1.0
  */
+
+/* COMMON */
 
 body {
     font-family: 'Open Sans';
-    
+    cursor: default;
     min-width: 320px;
 }
 
-h1, h2, h3, h4, h5, h6, nav {
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    font-weight: bold;
+p {
+    font-weight: lighter;
+    text-align: justify;
 }
 
+*::selection {
+    background: black;
+    color: white;
+}
+
+*::-moz-selection {
+    background: black;
+    color: white;
+}
+
+/* SECTIONS */
+header { padding: 20% 0; }
+nav { margin-top: -10%; }
+section, footer { padding: 10% 0; }
 header, section, footer {
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,36 +38,27 @@ header, section, footer {
     background-attachment: fixed;
 }
 
-section { padding: 100px 0; }
-.colored { color: #43d1c2; }
-
-p {
-    text-align: justify;
-    font-weight: lighter;
+/* CLASSES */
+.header, .heavy {
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
-a { color: #222; }
-a:hover { color: #43d1c2; }
-
-img { margin: 10px; }
-
-header { height: 100%; }
-header > div {
-    position: absolute;
+.stuck {
+    position: fixed;
     width: 100%;
-    bottom: 0;
-}
-nav {
-    padding-top: 20%;
-    bottom: 0;
+    z-index: 1001;
 }
 
-nav a:hover
-{
-    color: #222;
-    border-top: 5px solid #43d1c2;
-}
+/* BACKGROUNDS */
+header { background-image: url(../images/header.gif);}
+#skills { background-image: url(../images/skills.gif); }
+#other { background-image: url(../images/other.gif); }
 
-header { background-image: url(../img/bg1.gif);}
-#skills { background-image: url(../img/bg4.gif); }
-#other { background-image: url(../img/bg5.gif); }
+/* STATISTICS */
+.s0:before { content: "\f10c\f10c\f10c\f10c\f10c"; }
+.s1:before { content: "\f111\f10c\f10c\f10c\f10c"; }
+.s2:before { content: "\f111\f111\f10c\f10c\f10c"; }
+.s3:before { content: "\f111\f111\f111\f10c\f10c"; }
+.s4:before { content: "\f111\f111\f111\f111\f10c"; }
+.s5:before { content: "\f111\f111\f111\f111\f111"; }

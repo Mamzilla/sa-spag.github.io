@@ -1,233 +1,304 @@
 <!DOCTYPE html>
 
 <!--
-Alexis Gauthiez online resume
-sa-spag.github.io
+    Alexis Gauthiez's online resume
+    Version 1.0 / 23.04.2014
+    http://sa-spag.github.io/
 
-Make yourself comfortable and check out the code!
+    Crafted using Semantic UI (http://semantic-ui.com/) and Waypoints (http://imakewebthings.com/jquery-waypoints/).
+    Brackets involved.
 -->
 
-<html lang="en">
+<html>
     <head>
         <title>Alexis Gauthiez</title>
         <meta charset="utf-8">
+        <meta name="description" content="Just another online resume.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        
         <!-- STYLES -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/foundation.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-<!--        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">-->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,600,700,800'>
+        <link rel="stylesheet" href="css/semantic.min.css">
         <link rel="stylesheet" href="css/style.css">
-        
         
         <!-- SCRIPTS -->
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="javascript/semantic.min.js"></script>
+        <script src="javascript/waypoints.min.js"></script>
+        <script src="javascript/waypoints-sticky.min.js"></script>
+        <script src="javascript/cheet.min.js"></script>
+        <script src="javascript/script.js"></script>
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
+
     <body>
-        <header class="text-center">
-            <div>
-                <img src="img/logo.png" width="280">
-                <h1>Alexis Gauthiez</h1>
-                a 21 years old french <strong>computer engineering</strong> student.
-                <nav class="row text-center">
-                    <hr>
-                    <h5 class="large-2 column"><a href="#contact">Top</a></h5>
-                    <h5 class="large-2 column"><a href="#education">Education</a></h5>
-                    <h5 class="large-2 column"><a href="#skills">Skills</a></h5>
-                    <h5 class="large-2 column"><a href="#experience">Experience</a></h5>
-                    <h5 class="large-2 column"><a href="#other">Other</a></h5>
-                    <h5 class="large-2 column"><a href="#contact">Contact</a></h5>
-                </nav>
-             </div>
+        <header id="head">
+            <div class="ui page grid">
+                <div class="center aligned column">
+                    <h1 class="ui dividing header">Alexis Gauthiez</h1>
+                    a 21 years old french <strong>computer engineering</strong> student<noscript>, who works with JavaScript</noscript>.
+                </div>
+            </div>
         </header>
 
-        <section id="education">        
-            <div class="row">
-                <h2 class="column">Education</h2>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">since 2012</span><br><small>University of Paris-Sud / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Student at Polytech Paris-Sud</h5>
-                    <p>Second year of the engineering cycle, IT specialism, studying software engineering, databases, computer networks, human–computer interaction, computer architecture, operational research, project managment, team managment, communication &amp; economics.
-                    </p>
+        <nav>
+            <div class="ui center aligned page grid sticky">
+                <div class="ui teal vertical icon inverted heavy menu active">
+                    <a href="#education" class="item" >Education</a>
+                    <a href="#skills" class="item" >Skills</a>
+                    <a href="#experience" class="item" >Experience</a>
+                    <a href="#other" class="item" >Other</a>
+                    <a href="#contact" class="item" >Contact</a>
+                    <a href="#head" class="header item"><i class="angle up icon"></i></a>
                 </div>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">2010 - 2012</span><br><small>University of Paris-Sud / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Preparatory class at Polytech Paris-Sud</h5>
-                    <p>Known as Parcours des écoles d’ingénieurs Polytech or PeiP, I studied mathematics, physics, chemistry, electronics &amp; algorithmics.
-                    </p>
-                </div>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">2010</span><br><small>Lycée Saint-Charles, Athis-Mons / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Science A Level</h5>
-                    <p>Known as Baccalauréat scientifique or Bac S, with honors.
-                    </p>
+            </div>
+        </nav>
+        
+        <section id="education">
+            <div class="ui page grid">
+                <div class="ui relaxed stackable grid">
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                since 2012
+                                <div class="sub header">University of Paris-Sud</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Student at Polytech Paris-Sud</h3>
+                            <p>Second year of the engineering cycle, IT specialism, studying software engineering, databases, computer networks, human–computer interaction, computer architecture, operational research, project managment, team managment, communication &amp; economics.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                2010 - 2012
+                                <div class="sub header">University of Paris-Sud</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Preparatory class at Polytech Paris-Sud</h3>
+                            <p>Known as Parcours des écoles d’ingénieurs Polytech or PeiP, I studied mathematics, physics, chemistry, electronics &amp; algorithmics.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                2010
+                                <div class="sub header">Lycée Saint-Charles, Athis-Mons</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Science A Level</h3>
+                            <p>Known as Baccalauréat scientifique or Bac S, with honors.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="skills">
-            <div class="row">
-                <h2 class="column">Skills</h2>
-                <hr>
-                <div>
-                    <div class="large-4 column">
-                        <div class="row">
-                            <h5 class="small-6 column text-right">MS Office</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i></h5>
+            <div class="ui page grid">
+                <div class="ui stackable three column heavy grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui two column grid">
+                                <div class="right aligned column">MS Office</div>
+                                <div class="column"><i class="s5 icon"></i></div>                                
+                                <div class="right aligned column">Git</div>
+                                <div class="column"><i class="s2 icon"></i></div>                                
+                                <div class="right aligned column">Eclipse</div>
+                                <div class="column"><i class="s2 icon"></i></div>                               
+                                <div class="right aligned column">Photoshop</div>
+                                <div class="column"><i class="s3 icon"></i></div>                                
+                                <div class="right aligned column">InDesign</div>
+                                <div class="column"><i class="s1 icon"></i></div>
+                            </div>
+                        </div>                       
+                        <div class="column">
+                            <div class="ui two column grid">
+                                <div class="right aligned column">C</div>
+                                <div class="column"><i class="s4 icon"></i></div>                                
+                                <div class="right aligned column">C++</div>
+                                <div class="column"><i class="s2 icon"></i></div>                                
+                                <div class="right aligned column">Java</div>
+                                <div class="column"><i class="s3 icon"></i></div>                               
+                                <div class="right aligned column">VB</div>
+                                <div class="column"><i class="s1 icon"></i></div>                                
+                                <div class="right aligned column">ASM i386</div>
+                                <div class="column"><i class="s1 icon"></i></div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">Git</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">Eclipse</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">Photoshop</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">InDesign</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                    </div>
-                    <div class="large-4 column">
-                        <div class="row">
-                            <h5 class="small-6 column text-right">C</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">C++</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">Java</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">Visual Basic</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">ASM i386</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
+                        <div class="column">
+                            <div class="ui two column grid">
+                                <div class="right aligned column">HTML<i class="html5 icon"></i></div>
+                                <div class="column"><i class="s4 icon"></i></div>                                
+                                <div class="right aligned column">CSS<i class="css3 icon"></i></div>
+                                <div class="column"><i class="s3 icon"></i></div>                                
+                                <div class="right aligned column">JavaScript</div>
+                                <div class="column"><i class="s3 icon"></i></div>                               
+                                <div class="right aligned column">ASP</div>
+                                <div class="column"><i class="s1 icon"></i></div>                                
+                                <div class="right aligned column">SQL</div>
+                                <div class="column"><i class="s3 icon"></i></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="large-4 column">
-                        <div class="row">
-                            <h5 class="small-6 column text-right">HTML <i class="fa fa-html5"></i></h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>               
-                        <div class="row">
-                            <h5 class="small-6 column text-right">CSS <i class="fa fa-css3"></i></h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
+                    <div class="center aligned row">
+                        <div class="column">
+                            <div class="ui small header">
+                                French
+                                <div class="sub header">Native language</div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">JavaScript</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
+                        <div class="column">
+                            <div class="ui small header">
+                                English
+                                <div class="sub header">Fluent</div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">ASP</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="small-6 column text-right">SQL</h5>
-                            <h5 class="small-6 column text-left"><i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> <i class="fa fa-circle-o"></i></h5>
+                        <div class="column">
+                            <div class="ui small header">
+                                Spanish
+                                <div class="sub header">Basic knowledge</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="text-center">
-                    <h4 class="medium-4 column">French<br><small>Native language</small></h4>
-                    <h4 class="medium-4 column">English<br><small>Fluent</small></h4>
-                    <h4 class="medium-4 column">Spanish<br><small>Basic knowledge</small></h4>
                 </div>
             </div>
         </section>
         
         <section id="experience">
-            <div class="row">
-                <h2 class="column">Experience</h2>
-                <hr>
-                <h5 class="medium-1 column medium-text-right text-center"><i class="fa fa-exclamation-triangle"></i></h5>
-                <p class="medium-10 column">I am currently looking for a 12 weeks internship as an assistant engineer between June &amp; August 2014. Please contact-me if you are interrested.</p>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">July 2013</span><br><small>Savigny-sur-Orge / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Trainee at Europ-Camera</h5>
-                    <p>Several logistical and maintenance tasks : customer support on the phone and at the counter, desktops and laptops maintenance and repairs, preparation of stocks and orders of CCTV kits. Dealing with customers has been a great experience, making me more confident.
-                    </p>
-                </div>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">June - July 2012</span><br><small>Colombes / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Trainee at Spiecapag's IT department</h5>
-                    <p>Several several development and maintenance tasks : developing a tool to import data from Microsoft Excel sheets to a Microsoft Access database using Visual Basic, maintaining a data access web interface using ASP, creating a website to buy advertising items using HTML, CSS, Javascript and ASP.NET.</p>
-                </div>
-                <hr>
-                <h5 class="large-4 column large-text-right"><span class="colored">April 2007</span><br><small>Malakoff / France</small></h5>
-                <div class="large-8 column">
-                    <h5>Trainee at Colefy Ineo's IT department</h5>
-                    <p>One week as a trainee, discovering corporate environment. Few equipment maintenance tasks.</p>
+            <div class="ui page grid">
+                <div class="ui relaxed stackable grid">
+                    <div class="one column row">
+                        <div class="column">
+                            <div class="ui small icon message">
+                                <i class="exclamation icon"></i>
+                                    <div class="content">
+                                        <div class="header">Hey, you</div>
+                                        <p>I am currently looking for a 12 weeks internship as an assistant engineer between June & August 2014. Please contact-me if you are interrested.</p>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                July 2013
+                                <div class="sub header">Savigny-sur-Orge / France</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Trainee at Europ-Camera</h3>
+                            <p>Several logistical and maintenance tasks : customer support on the phone and at the counter, desktops and laptops maintenance and repairs, preparation of stocks and orders of CCTV kits. Dealing with customers has been a great experience, making me more confident.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                June - July 2012
+                                <div class="sub header">Colombes / France</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Trainee at Spiecapag's IT department</h3>
+                            <p>Several several development and maintenance tasks : developing a tool to import data from Microsoft Excel sheets to a Microsoft Access database using Visual Basic, maintaining a data access web interface using ASP, creating a website to buy advertising items using HTML, CSS, JavaScript and ASP.NET.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="right aligned six wide column">
+                            <div class="ui small teal header">
+                                April 2007
+                                <div class="sub header">Malakoff / France</div>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <h3 class="ui small header">Trainee at Colefy Ineo's IT department</h3>
+                            <p>One week as a trainee, discovering corporate environment. Few equipment maintenance tasks.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="other">
-            <div class="row">
-                <h2 class="column">Other</h2>
-                <hr>
-                <div class="text-center">
-                    <div class="large-4 column">
-                        <img src="img/guitar.png" height="200" width="200" class="img-circle">
-                        <h5>I love music</h5>
-                        <p>I have always been a music addict and I love creating. So I become a musician. I am a guitar player and I try to create some electronic music as well. I am part of Polytech Paris-Sud's music club, also known as Zikifips, and my mandate as its president just come to an end.</p>
-                    </div>
-                    <div class="large-4 column">
-                        <img src="img/font.png" height="200" width="200" class="img-circle">
-                        <h5>... cool looking stuff</h5>
-                        <p>Computer graphics is one of my favourite hobby, especially 2D, both bitmap and vector. I enjoy creating visual identities, such as logotypes. I had the chance to do some works for my school's associatons and more. I think it is important, because front-end is what people see at first.</p>
-                    </div>
-                    <div class="large-4 column">
-                        <img src="img/kart.png" height="200" width="200" class="img-circle">
-                        <h5>... and more.</h5>
-                        <p>Karting is so much fun, and I like to have fun. It is all about speed but also precision and focusing. I like travelling too. I have been to London several times, Spain, Portugal, Mexico, Hong-Kong : it is always a pleasure to empty my mind and discover new cultures and landscapes.</p>
+            <div class="ui page grid">
+                <div class="ui center aligned relaxed stackable three column grid">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="ui icon header">
+                                <i class="circular volume up icon"></i>
+                                I love music
+                            </h3>
+                            <p>I have always been a music addict and I love creating. So I become a musician, just a few years ago. I am a guitar player and I try to create some electronic music as well. I am part of Polytech Paris-Sud's music club, also known as Zikifips, and my mandate as its president just come to an end.</p>
+                        </div>                
+                        <div class="column">
+                            <h3 class="ui icon header">
+                                <i class="circular thumbs up icon"></i>
+                                ... cool looking stuff
+                            </h3>
+                            <p>Computer graphics is one of my favourite hobby, especially 2D, both bitmap and vector. I enjoy creating visual identities, such as logotypes. I had the chance to do some works for my school's associatons and more. I think it is important, because front-end is what people see at first.</p>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui icon header">
+                                <i class="circular checkered flag icon"></i>
+                                ... and more.
+                            </h3>
+                            <p>Karting is so much fun, and I like to have fun. It is all about speed but also precision and focusing. I like travelling too. I have been to London several times, Spain, Portugal, Mexico, Hong-Kong : it is always a pleasure to empty my mind and discover new cultures and landscapes.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section id="contact">
-            <div class="row">
-                <h2 class="column">Contact</h2>
-                <hr>
-                <div class="medium-6 column text-right">
-                    <img src="img/qr.svg" width="200px">
-                </div>
-                <div class="medium-6 column">
-                    <h5>
-                        5, rue Vigier<br>91600 Savigny-sur-Orge<br>France
-                        <hr>
-                        <i class="fa fa-fw fa-phone"></i> +33 6 89 26 50 35<br>
-                        <i class="fa fa-fw fa-envelope"></i> <a href="mailto:alexis.gauthiez@u-psud.fr">alexis.gauthiez@u-psud.fr</a><br>
-                        <i class="fa fa-fw fa-skype"></i> <a href="skype:sa-spag?chat">sa-spag</a>
-                    </h5>
-                </div>
-        </section>
+        <footer id="contact">
+            <div class="ui vertically divided page grid">
+                <div class="row">
+                    <div class="ui heavy text fluid large vertical menu">
+                        <a href="http://goo.gl/maps/M1p68" class="item" target="_blank">
+                            <i class="map marker icon"></i> Somewhere in France
+                        </a>
+                        <a href="mailto:alexis.gauthiez@u-psud.fr" class="item">
+                            <i class="mail icon"></i> alexis.gauthiez@u-psud.fr
+                        </a>
+                        <a href="skype:sa-spag?chat" class="item">
+                            <i class="skype icon"></i> sa-spag
+                        </a>
+                        <a href="callto:+33689265035" class="item">
+                            <i class="phone icon"></i> +33 6 89 26 50 35
+                        </a>
+                        <div class="item">
 
-        <footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/logo.svg" alt="&copy; 2014, Alexis Gauthiez" title="Crafted with hands by Alexis Gauthiez" class="ui right floated small image">
+                    <div class="basic segment">
+                        <div class="ui mini basic buttons">
+                            <a href="CV%20Alexis%20Gauthiez%20(en).pdf" class="ui button">English</a>
+                            <a href="CV%20Alexis%20Gauthiez%20(fr).pdf" class="ui button">French</a>
+                        </div>
+                        <div class="ui pointing small left teal label">.pdf</div>
+                    </div>              
+                </div>
+            </div>
         </footer>
+        
+        <div class="ui inverted page dimmer">
+            <div class="content">
+                <div class="center">
+                    <div class="ui teal icon header">
+                        <i class="circular question icon"></i> LOL
+                        <div class="sub header">Geek.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
