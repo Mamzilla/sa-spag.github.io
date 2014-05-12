@@ -51,9 +51,9 @@ header, section, footer {
 }
 
 /* BACKGROUNDS */
-header { background-image: url(../images/header.gif);}
-#skills { background-image: url(../images/skills.gif); }
-#other { background-image: url(../images/other.gif); }
+header { background-image: url(../images/header.jpg);}
+#skills { background-image: url(../images/skills.jpg); }
+#other { background-image: url(../images/other.jpg); }
 
 /* STATISTICS */
 .s0:before { content: "\f10c\f10c\f10c\f10c\f10c"; }

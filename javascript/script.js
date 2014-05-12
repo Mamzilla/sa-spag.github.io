@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function() {
-    
+    // Cheat
     cheet('↑ ↑ ↓ ↓ ← → ← → b a', function(){
         $('.page.dimmer')
             .dimmer('show')
@@ -16,7 +16,7 @@ $(document).ready(function() {
     $('section:not(:first)')
         .dimmer('show')
         .waypoint(function(direction) {
-            $(this).dimmer(direction == 'up' ? 'show' : 'hide')
+            $(this).dimmer(direction == 'up' ? 'show' : 'hide');
         }, { offset: '20 %' });
     
     // Sticky menu
@@ -40,7 +40,8 @@ $(document).ready(function() {
         });
     
     // Smooth scroll
-    $('nav a').click(function(){  
+    $('nav a').click(function(event){
+        event.preventDefault();
         var id = $(this).attr("href");  
 
         $('html, body').animate({  
